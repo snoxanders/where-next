@@ -1,0 +1,129 @@
+.full-container-services {
+    background-image: url('/public/images/img-2.jpg');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    overflow-x: hidden; /* Adiciona barra de rolagem quando necessário */
+}
+
+.container-back {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 70px;
+}
+
+.title-text {
+    width: 90vh;
+}
+
+.title-text-h1 {
+    font-size: 50px;
+    color: #cdf4f7;
+}
+
+.text {
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-p-text {
+    color: #f2f8f8;
+    margin-bottom: 10px;
+}
+
+.text-p-text-second-title {
+    color: #cdf4f7;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-title {
+    font-size: 25px;
+    color: #cdf4f7;
+}
+
+.last-text {
+    width: 90vh;
+}
+
+.last-p {
+    color: #ffff;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para telas menores (tablets e celulares) */
+@media (max-width: 1024px) {
+    .container-back {
+        padding: 50px;
+    }
+    .title-text,
+    .text,
+    .sub-title,
+    .last-text {
+        width: 80vw;
+    }
+    .title-text-h1 {
+        font-size: 40px;
+    }
+    .text-p-text-second-title,
+    .second-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-back {
+        padding: 40px;
+    }
+    .title-text,
+    .text,
+    .sub-title,
+    .last-text {
+        width: 90vw;
+    }
+    .title-text-h1 {
+        font-size: 20px;
+    }
+    .text-p-text-second-title,
+    .second-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-back {
+        padding: 20px;
+    }
+    .title-text {
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+    .text,
+    .sub-title,
+    .last-text {
+        width: 80vw;
+        padding: 10px; /* Adiciona padding interno para melhor espaçamento */
+    }
+    .title-text-h1 {
+        font-size: 20px;
+    }
+    .text-p-text-second-title,
+    .second-title {
+        font-size: 16px;
+    }
+}
